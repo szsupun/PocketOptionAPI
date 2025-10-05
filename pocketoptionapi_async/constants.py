@@ -14,7 +14,23 @@ ASSETS: Dict[str, int] = {
     "USDCHF": 62,
     "USDCAD": 61,
     "AUDUSD": 40,
-    "NZDUSD": 90,
+    "NZDUSD": 60,
+    "EURJPY": 48,
+    "EURGBP": 47,
+    "EURCHF": 46,
+    "EURCAD": 45,
+    "EURAUD": 44,
+    "GBPJPY": 54,
+    "GBPCHF": 53,
+    "GBPCAD": 52,
+    "GBPAUD": 51,
+    "AUDJPY": 38,
+    "AUDCHF": 37,
+    "AUDCAD": 36,
+    "CADJPY": 42,
+    "CADCHF": 41,
+    "CHFJPY": 43,
+    
     # OTC Forex Pairs
     "EURUSD_otc": 66,
     "GBPUSD_otc": 86,
@@ -22,29 +38,75 @@ ASSETS: Dict[str, int] = {
     "USDCHF_otc": 92,
     "USDCAD_otc": 91,
     "AUDUSD_otc": 71,
-    "AUDNZD_otc": 70,
-    "AUDCAD_otc": 67,
-    "AUDCHF_otc": 68,
-    "AUDJPY_otc": 69,
-    "CADCHF_otc": 72,
-    "CADJPY_otc": 73,
-    "CHFJPY_otc": 74,
-    "EURCHF_otc": 77,
-    "EURGBP_otc": 78,
-    "EURJPY_otc": 79,
-    "EURNZD_otc": 80,
-    "GBPAUD_otc": 81,
-    "GBPJPY_otc": 84,
-    "NZDJPY_otc": 89,
     "NZDUSD_otc": 90,
+    "EURJPY_otc": 79,
+    "EURGBP_otc": 78,
+    "EURCHF_otc": 77,
+    "EURCAD_otc": 76,
+    "EURAUD_otc": 75,
+    "GBPJPY_otc": 84,
+    "GBPCHF_otc": 83,
+    "GBPCAD_otc": 82,
+    "GBPAUD_otc": 81,
+    "AUDJPY_otc": 69,
+    "AUDCHF_otc": 68,
+    "AUDCAD_otc": 67,
+    "AUDNZD_otc": 70,
+    "CADJPY_otc": 73,
+    "CADCHF_otc": 72,
+    "CHFJPY_otc": 74,
+    "EURNZD_otc": 80,
+    "NZDJPY_otc": 89,
+    
+    # Additional Currency Pairs
+    "EURHUF_otc": 460,
+    "EURRUB_otc": 200,
+    "EURTRY_otc": 468,
+    "USDRUB_otc": 199,
+    "USDINR_otc": 202,
+    "USDMXN_otc": 509,
+    "USDPHP_otc": 511,
+    "USDPKR_otc": 517,
+    "USDSGD_otc": 526,
+    "USDTHB_otc": 521,
+    "USDVND_otc": 519,
+    "USDARS_otc": 506,
+    "USDBDT_otc": 500,
+    "USDBRL_otc": 502,
+    "USDCLP_otc": 525,
+    "USDCNH_otc": 467,
+    "USDCOP_otc": 515,
+    "USDDZD_otc": 508,
+    "USDEGP_otc": 513,
+    "USDIDR_otc": 504,
+    "CHFNOK_otc": 457,
+    "AEDCNY_otc": 538,
+    "BHDCNY_otc": 536,
+    "JODCNY_otc": 546,
+    "OMRCNY_otc": 544,
+    "QARCNY_otc": 542,
+    "SARCNY_otc": 540,
+    "IRRUSD_otc": 548,
+    "KESUSD_otc": 554,
+    "LBPUSD_otc": 530,
+    "MADUSD_otc": 534,
+    "NGNUSD_otc": 552,
+    "SYPUSD_otc": 550,
+    "TNDUSD_otc": 532,
+    "UAHUSD_otc": 558,
+    "YERUSD_otc": 528,
+    "ZARUSD_otc": 556,
+    
     # Commodities
     "XAUUSD": 2,  # Gold
     "XAUUSD_otc": 169,
     "XAGUSD": 65,  # Silver
     "XAGUSD_otc": 167,
-    "UKBrent": 50,  # Oil
+    "XAGEUR": 103,  # Silver/EUR
+    "XAUEUR": 102,  # Gold/EUR
+    "UKBrent": 50,  # Brent Oil
     "UKBrent_otc": 164,
-    "USCrude": 64,
+    "USCrude": 64,  # WTI Crude Oil
     "USCrude_otc": 165,
     "XNGUSD": 311,  # Natural Gas
     "XNGUSD_otc": 399,
@@ -52,9 +114,12 @@ ASSETS: Dict[str, int] = {
     "XPTUSD_otc": 400,
     "XPDUSD": 313,  # Palladium
     "XPDUSD_otc": 401,
+    
     # Cryptocurrencies
     "BTCUSD": 197,
+    "BTCUSD_otc": 484,
     "ETHUSD": 272,
+    "ETHUSD_otc": 487,
     "DASH_USD": 209,
     "BTCGBP": 453,
     "BTCJPY": 454,
@@ -62,11 +127,24 @@ ASSETS: Dict[str, int] = {
     "BCHGBP": 451,
     "BCHJPY": 452,
     "DOTUSD": 458,
-    "LNKUSD": 464,
+    "DOTUSD_otc": 486,
+    "LNKUSD": 464,  # Chainlink
+    "LINK_otc": 478,
+    "LTCUSD_otc": 488,  # Litecoin
+    "ADA-USD_otc": 473,  # Cardano
+    "AVAX_otc": 481,  # Avalanche
+    "BNB-USD_otc": 470,  # BNB
+    "BITB_otc": 494,  # Bitcoin ETF
+    "DOGE_otc": 485,  # Dogecoin
+    "MATIC_otc": 491,  # Polygon
+    "SOL-USD_otc": 472,  # Solana
+    "TON-USD_otc": 480,  # Toncoin
+    "TRX-USD_otc": 476,  # TRON
+    
     # Stock Indices
     "SP500": 321,
     "SP500_otc": 408,
-    "NASUSD": 323,
+    "NASUSD": 323,  # US100
     "NASUSD_otc": 410,
     "DJI30": 322,
     "DJI30_otc": 409,
@@ -87,7 +165,8 @@ ASSETS: Dict[str, int] = {
     "CAC40": 455,
     "AEX25": 449,
     "SMI20": 466,
-    "H33HKD": 463,
+    "H33HKD": 463,  # Hong Kong 33
+    
     # US Stocks
     "#AAPL": 5,
     "#AAPL_otc": 170,
@@ -121,22 +200,18 @@ ASSETS: Dict[str, int] = {
     "#CITI": 326,
     "#CITI_otc": 413,
     "#FDX_otc": 414,
-    "#TWITTER": 330,
-    "#TWITTER_otc": 415,
     "#BABA": 183,
     "#BABA_otc": 428,
-    # Additional assets
-    "EURRUB_otc": 200,
-    "USDRUB_otc": 199,
-    "EURHUF_otc": 460,
-    "CHFNOK_otc": 457,
-    # Microsoft and other tech stocks
-    "Microsoft_otc": 521,
-    "Facebook_OTC": 522,
-    "Tesla_otc": 523,
-    "Boeing_OTC": 524,
-    "American_Express_otc": 525,
+    
+    # Additional Tech Stocks
+    "AMD_otc": 568,  # Advanced Micro Devices
+    "COIN_otc": 570,  # Coinbase Global
+    "GME_otc": 566,  # GameStop Corp
+    "MARA_otc": 572,  # Marathon Digital Holdings
+    "PLTR_otc": 562,  # Palantir Technologies
+    "VIX_otc": 560,  # VIX
 }
+
 
 
 # WebSocket regions with their URLs
